@@ -44,11 +44,10 @@
                         <div class="main-menu  d-none d-lg-block">
                             <nav>
                                 <ul id="navigation">
-                                    <li><a  href="index.html">Home</a></li>
-                                    <li><a href="about.html">Quem Somos</a></li>
-                                    <li><a href="service.html">Adotar</a></li>
-                                    <li><a href="contact.html">Apadrinhar</a></li>
-                                    <li><a href="contact.html">Contato</a></li>
+                                    <li><a [routerLink]="['home']">Home</a></li>
+                                    <li><a [routerLink]="['adotar']">Adotar</a></li>
+                                    <li><a [routerLink]="['apadrinhar']">Apadrinhar</a></li>
+                                    <li><a [routerLink]="['contato']">Contato</a></li>
                                 </ul>
                             </nav>
                         </div>

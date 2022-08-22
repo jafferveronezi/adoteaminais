@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { SliderareaComponent } from './sliderarea/sliderarea.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { AdotarComponent } from './adotar/adotar.component';
+import { ApadrinharComponent } from './apadrinhar/apadrinhar.component';
+import { ContatoComponent } from './contato/contato.component';
+import { LayoutComponent } from './layout/layout.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { AboutComponent } from './about/about.component';
     HeaderComponent,
     SliderareaComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    AdotarComponent,
+    ApadrinharComponent,
+    ContatoComponent,
+    LayoutComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
