@@ -13,6 +13,7 @@ import { ApadrinharComponent } from './apadrinhar/apadrinhar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
+import { DetalhesComponent } from './detalhes/detalhes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeComponent } from './home/home.component';
     ApadrinharComponent,
     ContatoComponent,
     LayoutComponent,
-    HomeComponent
+    HomeComponent,
+    DetalhesComponent
   ],
   imports: [
     BrowserModule,
