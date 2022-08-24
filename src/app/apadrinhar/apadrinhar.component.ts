@@ -8,6 +8,8 @@ import { AnimaisService } from '../services/animais.service';
 })
 export class ApadrinharComponent implements OnInit {
 
+  animaisList: any;
+
   constructor(private animaisService: AnimaisService) { }
 
   ngOnInit(): void {
@@ -15,11 +17,11 @@ export class ApadrinharComponent implements OnInit {
     this.animaisService.getAnimiais().subscribe(
       (data) => {
         console.log(data);
+        this.animaisList = data
       },
       (error) => {
         console.log(error);
       }
     );
   }
-
 }

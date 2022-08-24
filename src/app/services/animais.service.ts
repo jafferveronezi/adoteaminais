@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,11 +7,14 @@ import { Injectable } from '@angular/core';
 export class AnimaisService {
 
 
-  SERVER_URL = 'http://localhost:3000'
+  readonly SERVER_URL = 'https://app-animal-pos.herokuapp.com'
+
+  headers: HttpHeaders = new HttpHeaders().set('Access-Control-Allow-Origin', '*');
 
   constructor(private http: HttpClient) { }
 
   public getAnimiais() {
-    return this.http.get(`${this.SERVER_URL}/animais`)
+    return this.http.get(`${this.SERVER_URL}/animais`, { headers: this.headers } )
   }
+
 }
