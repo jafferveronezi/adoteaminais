@@ -10,21 +10,21 @@
         </div> 
 
         <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-                <div class="single_team">
+            <div class="col-lg-4 col-md-6" *ngFor="let item of animaisAdotarList">
+                <div class="single_team" (click)="goToDetalhesByState(item)">
                     <div class="thumb">
                         <img src="../assets/img/team/1.png" alt="">
                     </div>
                     <div class="member_name text-center">
                         <div class="mamber_inner">
-                            <h4>Rala Emaia</h4>
-                            <p>Senior Director</p>
+                            <h4>{{item.nome}}</h4>
+                            <p>{{item.observacao}}</p>
                         </div>
                         </div>
                     </div>
                 </div>
 
-            <div class="col-lg-4 col-md-6">
+            <!-- <div class="col-lg-4 col-md-6">
                 <div class="single_team">
                     <div class="thumb">
                         <img src="../assets/img/team/2.png" alt="">
@@ -179,7 +179,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div> 
